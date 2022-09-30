@@ -10,11 +10,7 @@ public class TelevisionExam {
 		tv.setSize("100인치");
 		System.out.println(tv.infoTv());
 		tv.setPower();
-		if(tv.isPower()) {
-			System.out.println("TV: power: ON");
-		}else {
-			System.out.println("TV: power: OFF");
-		}
+		tvPower(tv.getPower());
 		
 		Television tv2 = new Television();
 		
@@ -23,21 +19,13 @@ public class TelevisionExam {
 		System.out.println(tv2.infoTv());
 		
 		tv2.setPower();
-		if(tv2.getPower()) {
-			System.out.println("TV power: ON");
-		}else {
-			System.out.println("TV power: OFF");
-		}
+		tvPower(tv2.getPower());
 		
 		tv2.setChannel(3);
 		System.out.println("채널은 "+ tv2.getChannel()+"입니다.");
 		
 		tv2.setPower();
-		if(tv2.getPower()) {
-			System.out.println("TV power: ON");
-		}else {
-			System.out.println("TV power: OFF");
-		}
+		tvPower(tv2.getPower());
 		
 		
 		tv.setChannel(24);
@@ -46,6 +34,12 @@ public class TelevisionExam {
 		tv.channelDown();
 		System.out.println("채널은 "+tv.getChannel()+"입니다.");
 	}
-	
+	public static void tvPower(boolean temp){
+		if(temp) {
+			System.out.println("TV power: ON");
+		}else {
+			System.out.println("TV power: OFF");
+		}
+	}
 
 }
