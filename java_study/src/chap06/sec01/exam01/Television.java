@@ -27,10 +27,11 @@ public Television(String model, String size) {
 	public String getModel() {
 		return model;
 	}
-	
+
 	public void setModel(String model) {
-		
+		this.model = model;
 	}
+
 
 	public String getSize() {
 		return size;
