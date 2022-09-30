@@ -5,7 +5,7 @@ public class ExplicitConversionExample {
         double dNum = 5.7;
         float fNum = 1.7f;
 
-        int result1 = (int) dNum + (int) fnum;
+        int result1 = (int) dNum + (int) fNum;
         int result2 = (int) (dNum+fNum);
         float result3 = (float) (dNum+fNum);
         double result4 = dNum+fNum;
