@@ -24,6 +24,6 @@ public class OperationPromotionExample {
         int x = 1;
         int y = 2;
         double result = (double) x/y;
-        System.out.println(result)
+        System.out.println(result);
     }
 }

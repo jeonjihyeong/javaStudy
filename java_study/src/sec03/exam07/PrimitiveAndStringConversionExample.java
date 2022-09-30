@@ -1,8 +1,8 @@
 package sec03.exam07;
 
-public class StringConcatExample {
+public class PrimitiveAndStringConversionExample {
 	public static void main(String[] args) {
-        int vlaue1 =Integer.parseInt("10");
+        int value1 =Integer.parseInt("10");
         double value2 = Double.parseDouble("3.14");
         boolean value3 = Boolean.parseBoolean("true");
 
