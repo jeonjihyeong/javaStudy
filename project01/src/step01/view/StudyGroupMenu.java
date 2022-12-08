@@ -2,7 +2,7 @@ package step01.view;
 
 import java.util.Scanner;
 
-import step01.cotroller.StudyGroupManagement;
+import step01.controller.StudyGroupManagement;
 //스터디그룹을 관리를 위한 메뉴 클래스
 public class StudyGroupMenu {
 //	스캐너 객체 참조변수 선언
