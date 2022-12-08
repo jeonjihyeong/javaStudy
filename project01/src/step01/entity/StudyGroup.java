@@ -26,7 +26,13 @@ public class StudyGroup {
 		this.foundationDay = DateUtil.toDay();
 	}
 	
-//	게터/세터
+	//	게터/세터
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
@@ -64,12 +70,12 @@ public class StudyGroup {
 		StringBuilder builder = new StringBuilder();
 		builder.append("[스터디그룹 정보]");
 		builder.append("\n------------------------------");
-		builder.append("\n * 아이디: ");
-		builder.append("\n * 스터디명: ");
-		builder.append("\n * 스터디주제: ");
-		builder.append("\n * 스터디기간: ");
-		builder.append("\n * 스터디장소: ");
-		builder.append("\n * 등록일: ");
+		builder.append("\n * 아이디: "+this.id);
+		builder.append("\n * 스터디명: "+this.name);
+		builder.append("\n * 스터디주제: "+this.topic);
+		builder.append("\n * 스터디기간: "+this.period);
+		builder.append("\n * 스터디장소: "+this.room);
+		builder.append("\n * 등록일: "+this.foundationDay);
 		
 		return builder.toString();
 	}
